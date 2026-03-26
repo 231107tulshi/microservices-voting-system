@@ -1,0 +1,183 @@
+<!-- <!DOCTYPE html>
+<html>
+
+<head>
+<title>Online Voting System</title>
+
+<style>
+body{
+font-family:Arial;
+text-align:center;
+}
+
+button{
+padding:10px;
+margin:10px;
+font-size:16px;
+}
+</style>
+
+</head>
+
+<body>
+
+<h1>Online Voting System</h1>
+
+<h2>User Service</h2>
+<button onclick="openRegister()">Register User</button>
+
+<h2>Candidate Service</h2>
+<button onclick="openCandidates()">Show Candidates</button>
+
+<h2>Voting Service</h2>
+<button onclick="openVote()">Vote</button>
+
+<h2>Result Service</h2>
+<button onclick="openResults()">Show Results</button>
+
+<script>
+
+function openRegister(){
+window.location="http://localhost:5001/register-page"
+}
+
+function openCandidates(){
+window.location="http://localhost:5002/candidates-page"
+}
+
+function openVote(){
+window.location="http://localhost:5003/vote-page"
+}
+
+function openResults(){
+window.location="http://localhost:5004/results-page"
+}
+
+</script>
+
+</body>
+</html> -->
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Online Voting System</title>
+
+<style>
+
+*{
+box-sizing:border-box;
+font-family:Arial, sans-serif;
+}
+
+body{
+margin:0;
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background:linear-gradient(135deg,#4facfe,#00f2fe);
+}
+
+.container{
+background:white;
+padding:40px;
+border-radius:12px;
+box-shadow:0 10px 25px rgba(0,0,0,0.2);
+width:420px;
+text-align:center;
+}
+
+h1{
+margin-bottom:30px;
+}
+
+.service{
+margin:20px 0;
+}
+
+.service h2{
+margin-bottom:10px;
+font-size:18px;
+color:#333;
+}
+
+button{
+width:100%;
+padding:12px;
+border:none;
+border-radius:6px;
+background:#4facfe;
+color:white;
+font-size:16px;
+cursor:pointer;
+transition:0.3s;
+}
+
+button:hover{
+background:#2c8de0;
+transform:scale(1.03);
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Online Voting System</h1>
+
+<div class="service">
+<h2>User Service</h2>
+<button onclick="openRegister()">Register User</button>
+</div>
+
+<div class="service">
+<h2>Registered Users</h2>
+<button onclick="openUser()">Show Users</button>
+</div>
+
+<div class="service">
+<h2>Candidate Service</h2>
+<button onclick="openCandidates()">Show Candidates</button>
+</div>
+
+<div class="service">
+<h2>Voting Service</h2>
+<button onclick="openVote()">Vote</button>
+</div>
+
+<div class="service">
+<h2>Result Service</h2>
+<button onclick="openResults()">Show Results</button>
+</div>
+
+</div>
+
+<script>
+
+function openRegister(){
+window.location="http://localhost:5001/"
+}
+function openUser(){
+window.location="http://localhost:5001/"
+}
+
+function openCandidates(){
+window.location="http://localhost:5002/"
+}
+
+function openVote(){
+window.location="http://localhost:5003/"
+}
+
+function openResults(){
+window.location="http://localhost:5004/"
+}
+
+</script>
+
+</body>
+</html>
