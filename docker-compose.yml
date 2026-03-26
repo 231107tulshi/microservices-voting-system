@@ -1,0 +1,21 @@
+version: '3'
+services:
+  user-service:
+    build: ./user-service
+    ports:
+      - "5001:5000"
+
+  candidate-service:
+    build: ./candidate-service
+    ports:
+      - "5002:5000"
+
+  voting-service:
+    build: ./voting-service
+    ports:
+      - "5003:5000"
+
+  result-service:
+    build: ./result-service
+    ports:
+      - "5004:5000"
